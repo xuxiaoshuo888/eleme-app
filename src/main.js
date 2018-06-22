@@ -4,9 +4,12 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import ElementUI from 'element-ui';
+
+import 'lib-flexible';
 Vue.config.productionTip = false;
 
-
+/*引入公共样式*/
+import "../static/css/font-awesome.css";
 
 Vue.use(ElementUI);
 /* eslint-disable no-new */
