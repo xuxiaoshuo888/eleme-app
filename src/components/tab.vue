@@ -1,24 +1,41 @@
 <template>
-    <div class="tab">
-      <div class="tab_son">首页</div>
-      <div class="tab_son">发现</div>
-      <div class="tab_son">订单</div>
-      <div class="tab_son">我的</div>
+    <div>
+      <div class="tab">
+        <div class="tab_son"><router-link to="/home">首页</router-link></div>
+        <div class="tab_son"><router-link to="/find">发现</router-link></div>
+        <div class="tab_son"><router-link to="/list">订单</router-link></div>
+        <div class="tab_son"><router-link to="/me">我的</router-link></div>
+      </div>
+      <router-view></router-view>
     </div>
+
 </template>
 
 <script>
     export default {
-        name: "tab"
+        name: "tab",
+        data(){
+            return{
+
+            }
+        }
     }
 </script>
 
-<style scoped>
+<style scoped lang="less">
   .tab{
     display: flex;
     flex-direction: row;
+    background-color: white;
   }
   .tab_son{
     flex-grow: 1;
+    a{
+      display: block;
+
+    }
+  }
+  .router-link-active{
+    color:#0089dc;
   }
 </style>
