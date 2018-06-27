@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view name="head"></router-view>
     <router-view name="body"/>
     <div class="tab">
       <router-view name="foot"/>

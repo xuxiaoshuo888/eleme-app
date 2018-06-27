@@ -1,10 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import home from '@/views/home';
+
 import tab from '@/components/tab';
-import find from "@/components/find";
-import list from "@/components/list";
-import me from "@/components/me";
+import home from '@/views/home';
+import find from "@/views/find";
+import list from "@/views/list";
+import me from "@/views/me";
 Vue.use(Router);
 
 export default new Router({

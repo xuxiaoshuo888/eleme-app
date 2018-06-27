@@ -1,12 +1,14 @@
 <template>
     <div>
       <div class="tab">
-       <router-link to="/home"><i class="fa fa-ravelry"></i><span>首页</span></router-link>
-       <router-link to="/find"><i class="fa fa-compass"></i><span>发现</span></router-link>
-       <router-link to="/list"><i class="fa fa-list-ul"></i><span>订单</span></router-link>
-       <router-link to="/me"><i class="fa fa-user-o"></i><span>我的</span></router-link>
+       <router-link to="@/views/home"><i class="fa fa-ravelry"></i><span>首页</span></router-link>
+       <router-link to="@/views/find"><i class="fa fa-compass"></i><span>发现</span></router-link>
+       <router-link to="@/views/list"><i class="fa fa-list-ul"></i><span>订单</span></router-link>
+       <router-link to="@/views/me"><i class="fa fa-user-o"></i><span>我的</span></router-link>
       </div>
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
 </template>
 
